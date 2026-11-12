@@ -5,6 +5,7 @@ function setup() {
   createCanvas(1300, 600);
   ovalY = 20;
   ovalX = 20;
+  ovalZ = 20
   ovalMove = 3;
 }
 
@@ -54,19 +55,25 @@ function draw() {
 
   //Clouds that loop across the screen
   fill(242, 237, 255);
-  ellipse(ovalX, 245, 100, 50);
-  ellipse(ovalX, 220, 60, 35);
+  ellipse(ovalX, 100, 200, 100);
 
-  ellipse(ovalX, 175, 100, 50);
-  ellipse(ovalX, 195, 60, 35);
-  ellipse(ovalX, 150, 60, 35);
+  ellipse(ovalY, 200, 100, 50);
 
-  ellipse(ovalX, 100, 150, 60);
-  ellipse(ovalX, 60, 60, 35);
+  ellipse(ovalZ, 50, 150, 60);
 
   //  Bounce animation
-  ovalX = ovalX +1
+  ovalX = ovalX +2;
   if (ovalX > width+30) {
     ovalX=-30
+  }
+
+  ovalY = ovalY +3;
+  if (ovalY > width+38) {
+    ovalY=-30
+  }
+  
+  ovalZ = ovalZ +4;
+  if (ovalZ > width+30) {
+    ovalZ=-30
   }
 }
