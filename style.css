@@ -1,7 +1,38 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: darkcyan;
+  display:column;
 }
+
 canvas {
+  display:block;
+  padding: 40px;
+  border-radius: 50%;
+  margin: auto;
+  justify-self: center;
+}
+
+h1 {
+  padding: 40px;
+  color: white;
+  font-style: normal;
+  text-align: center;
+}
+
+p1 {
   display: block;
+  padding: 20px;
+  color: rebeccapurple;
+  font-style: normal;
+  text-align: center;
+}
+
+p2 {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  color: darkblue;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
